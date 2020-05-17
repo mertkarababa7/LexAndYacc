@@ -1,0 +1,30 @@
+/* does not work when result is float */
+multiply(int x, int y, pointer int result){
+    result = x*y;
+}
+multiplyF(float x, float y, pointer float result){
+    result = x*y;
+}
+
+/* main */
+main{
+
+    int a; a = 40;
+    int b; b = 20;
+  int iResult; iResult = 0;
+  
+
+ eval multiply(a, b, iResult);
+     string s1; s1 = "--INT----a=40*b=20-----"; print(s1);
+   print(iResult);
+    
+        float c; c = 10.50;
+        float d; d = 10.50;
+      float FResult; FResult = 0.00;
+
+ eval multiplyF(c, d, FResult);
+     string s2; s2 = "--FLOAT----a=10.50*b=10.50-----"; print(s2);
+  print(FResult);
+    
+    
+}

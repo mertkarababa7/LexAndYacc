@@ -1,0 +1,87 @@
+## BNF FORM
+
+#### Types
+
+
+<type> = <primitive type> 
+<primitive type> = <numeric type> | boolean
+
+<numeric type> = <integral type> | <floating-point type>
+
+<integral type> =int 
+
+<floating-point type> = float
+
+
+#### Blocks and Commands
+
+<for statement>=  for (<expression>){ <statement> }     
+<if statement> if ( <expression> ){ }
+<if then else statement> if ( <expression> ){ <statement no short if> } else {<statement> }
+<while statement> = while ( <expression> ){ <statement>}
+
+
+#### Expressions
+
+<constant expression> = <expression>
+
+<expression> = <assignment expression>
+
+<assignment expression> = <conditional expression> | <assignment>
+
+<assignment> = <left hand side> <assignment operator> <assignment expression>
+
+<left hand side>= <expression name>
+
+<assignment operator> = = | *= | /= | %= 
+
+#### Tokens
+
+<digits> = <digit> | <digits> <digit>
+
+<digit> = 0 | <non zero digit>
+
+<non zero digit> = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<signed integer> = <sign>? <digits>
+
+<sign> = + | -
+
+<boolean literal> = true | false
+
+<character literal>= ' <single character> ' | ' <escape sequence> '
+
+<single character> = <input character> except ' and \
+
+<string literal> = " <string characters>?"
+
+<string characters> = <string character> | <string characters> <string character>
+
+<string character> = <input character> except " and \ | <escape character>
+
+
+####  Fragments
+
+fragment LETTER : A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z ;
+
+ fragment A: 'A'|'a';        fragment J: 'J'|'j';   fragment S: 'S'|'s';
+ fragment B: 'B'|'b';        fragment K: 'K'|'k';   fragment T: 'T'|'t';
+ fragment C: 'C'|'c';        fragment L: 'L'|'l';   fragment U: 'U'|'u';
+ fragment D: 'D'|'d';        fragment M: 'M'|'m';   fragment V: 'V'|'v';
+ fragment E: 'E'|'e';        fragment N: 'N'|'n';   fragment W: 'W'|'w';
+ fragment F: 'F'|'f';        fragment O: 'O'|'o';   fragment X: 'X'|'x';
+ fragment G: 'G'|'g';        fragment P: 'P'|'p';   fragment Y: 'Y'|'y';
+ fragment H: 'H'|'h';        fragment Q: 'Q'|'q';   fragment Z: 'Z'|'z';
+ fragment I: 'I'|'i';        fragment R: 'R'|'r';   
+
+fragment DIGIT: [0-9];
+
+#### Operations
+
+PLUS: '+' ;
+MINUS: '-' ;
+MULT: '*' ;
+DIV: '/' ;
+AND: '&&' ;
+OR: '||' ;
+ASSIGNMENT: '=' ;

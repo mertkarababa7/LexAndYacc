@@ -1,0 +1,43 @@
+/* does not work when result is float */
+divideF(float x, float y, pointer float result){
+    result = x/y;
+}
+
+/* does not work when result is float */
+divide(int x, int y, pointer int result){
+    result = x/y;
+}
+
+/* main */
+main{
+                  /* declare divide with float values */
+    /* declare float - display error when  int  value is assigned to float type
+       Incorrect datatype for assignment */
+    /* lets create pi number in our project*/
+    
+    float a; a = 22.00; 
+    float b; b = 7.00; 
+    float result; result = 0.0;
+    string s1; s1 = "--FLOAT----a=22.00/b=7.00-----"; print(s1);
+    eval divideF(a, b, result);
+    print(result);  
+   
+   
+
+
+          /* declare divide with int values */
+    /* declare int - display error when float value is assigned to int type
+       Incorrect datatype for assignment */
+    int i1; i1 = 66;
+    int i2; i2 = 22; 
+    int i3; i3 = 11;
+    int result1; result1 = 0;
+    int result2; result2= 0;
+    eval divide(i1, i2, result1);
+    eval divide(i1, i3, result2);
+    string s2; s2 = "--INTEGER-----İ1=66/İ2=22-----"; print(s2);
+    print(result1);  
+    string s3; s3 = "--INTEGER-----İ1=66/İ3=11-----"; print(s3);
+    print(result2);
+
+}

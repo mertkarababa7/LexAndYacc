@@ -1,0 +1,10 @@
+
+
+
+/* main */
+main{
+    /* assign float value to int  */
+    int a; a = 22.00; 
+    int b; b = 7.00; 
+    /* will give an error Incorrect datatype for assignment */
+   }

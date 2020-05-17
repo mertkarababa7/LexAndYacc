@@ -1,0 +1,15 @@
+
+main{
+
+  
+    string s1; s1 = "Mert KARABABA+ "; print(s1);
+    string s2; s2 = "Enes Salim ERDEM+"; print(s2);
+    string s3; s3 = "Recai Kaan KANATLI"; print(s3);
+      string s6; s6 = "Lets put them together"; print(s6);
+    string s4; s4 = "PROJECT MEMBERS=>";
+       string s5; s5 =s4 + s1 + s2 + s3 ; print(s5);
+
+  
+    
+    
+}

@@ -1,0 +1,8 @@
+/* main */
+main{
+
+    /* declare boolean */
+    bool b1; b1 = TRUE; print b1;
+    bool b2; b2 = FALSE; print b2;
+  
+    }

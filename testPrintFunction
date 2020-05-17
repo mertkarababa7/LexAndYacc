@@ -1,0 +1,34 @@
+/* print function (with integer) */
+printFn(int x){
+    print x;
+    
+}
+/* print function (w.string) */
+printFnS(string y){
+    print y;
+    }
+    /* print function (w.float) */
+printFnF(float z){
+    print z;
+    }
+   
+/* main */
+main{
+
+
+ /* function call for integer  value */
+      int x; x = 71;
+      eval printFn(x);
+    
+ /* function call for String  */
+       string y; y="CSE AKDENIZ";
+       eval printFnS(y);
+    
+ /* function call for Float value  */
+        float z; z = 3.14;
+        eval printFnF(z);
+    
+    
+    
+
+}

@@ -1,0 +1,40 @@
+/* does not work when result is float */
+addF(float x, float y, pointer float result){
+    result = x+y;
+}
+
+/* does not work when result is float */
+add(int x, int y, pointer int result){
+    result = x+y;
+}
+
+/* main */
+main{
+                  /* declare add with float values */
+    /* declare float - display error when  int  value is assigned to float type
+       Incorrect datatype for assignment */
+    
+    float a; a = 22.99; 
+    float b; b = 7.01; 
+    float result; result = 0.0;
+    string s1; s1 = "--FLOAT----a=22.99+b=7.01-----"; print(s1);
+    eval addF(a, b, result);
+    print(result);  
+   
+   
+
+
+          /* declare divide with int values */
+    /* declare int - display error when float value is assigned to int type
+       Incorrect datatype for assignment */
+    int i1; i1 = 199;
+    int i2; i2 = 1; 
+    
+    int result1; result1 = 0;
+    eval add(i1, i2, result1);
+    
+    string s2; s2 = "--INTEGER---İ1=199+İ2=1---"; print(s2);
+    print(result1);  
+    
+
+}

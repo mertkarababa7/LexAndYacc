@@ -1,0 +1,22 @@
+/* main */
+main{
+/* declare int */
+    int a; a = 200; print a;
+    int b; b = 100; print b;
+       /* declare basic mat operations */
+    int i3; i3 = a + b;
+    int i4; i4= a - b;
+    int i5; i5= a * b;
+    int i6; i6= a / b;
+         
+         /* print basic mat operations */
+           
+             string s1; s1 = " a + b "; print(s1); 
+    print i3;
+             string s2; s2 = " a - b "; print(s2);
+    print i4;
+             string s3; s3 = " a * b "; print(s3);
+    print i5;
+             string s4; s4 = " a / b"; print(s4);
+    print i6;
+    }

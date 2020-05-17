@@ -1,0 +1,8 @@
+
+/* main */
+main{
+    /* assign values without giving data type */
+     a; a = 22.00; 
+     b; b = 7.00; 
+    /* will give an error "Variable not found in Envrionment */
+   }

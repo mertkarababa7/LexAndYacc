@@ -1,0 +1,8 @@
+
+/* main */
+main{
+    /* assign int value to float  */
+    float a; a = 25; 
+    float b; b = 7; 
+    /* will give an error Incorrect datatype for assignment */
+   }
