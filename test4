@@ -1,0 +1,22 @@
+
+/* main */
+main{
+    /* support for AND, OR */
+    int i1; i1 = 45; print i1;  
+    int i2; i2 = 10; print i2;
+    
+    bool b1; b1 = i1 and i2; print b1;
+    bool b2; b2 = (i1 or i2); print b2;
+
+    int i3; i3 = 0; print i3;
+    bool b3; b3 = i1 and i3; print b3;
+    bool b4; b4 = (i1 or i3); print b4;
+
+    if(i1 and i2){
+        print "all are non-zero";
+    }
+
+    if(i1 or i3){
+        print "one is non-zero";
+    }
+}
